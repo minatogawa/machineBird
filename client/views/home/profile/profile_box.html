@@ -1,0 +1,14 @@
+<template name="profileBox">
+	{{#with currentUser}}
+		<h4>{{profile.name}}</h4>
+		<p>{{profile.about}}</p>
+		<button class="btn btn-block">
+			Editar perfil
+		</button>
+	<!-- {{else}}
+		<p>Perfil incompleto</p>
+		<button class="btn btn-block">
+			Completar perfil
+		</button> -->
+	{{/with}}
+</template>

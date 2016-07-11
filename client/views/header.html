@@ -6,7 +6,10 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					{{> loginButtons}}
+					{{#if currentUser}}
+  						<li><p><img src="{{profileURL}}" width=30></p></li>
+					{{/if}}
+						<li>{{> loginButtons}}</li>
 				</ul>
 			</div>
 		</nav>
