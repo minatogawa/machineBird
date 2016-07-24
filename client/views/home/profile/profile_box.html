@@ -1,8 +1,8 @@
 <template name="profileBox">
 	{{#with currentUser}}
-		<h4>{{profile.name}}</h4>
+		<h4><a href="/user/{{_id}}">{{profile.name}}</a></h4>
 		<p>{{profile.about}}</p>
-		<button class="btn btn-block">
+		<button class="btn btn-success">
 			Editar perfil
 		</button>
 	<!-- {{else}}
